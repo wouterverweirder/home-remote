@@ -1,0 +1,12 @@
+{
+  "name": "home-remote",
+  "description": "home remote app",
+  "version": "0.0.2",
+  "private": true,
+  "dependencies": {
+    "express": "latest",
+    "lirc_node": "latest",
+    "gpio": "latest",
+    "xbmc": "latest"
+  }
+}

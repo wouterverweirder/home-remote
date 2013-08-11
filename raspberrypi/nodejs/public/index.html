@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home Remote</title>
+
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+    	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+		<link rel="apple-touch-icon" href="/img/icon.png" />
+		<link rel="apple-touch-startup-image" href="/img/startup/startup-460h.png" media="screen and (max-device-width: 320px)" />
+	    <link rel="apple-touch-startup-image" href="/img/startup/startup-460h@2x.png" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" />
+	    <link rel="apple-touch-startup-image" href="/img/startup/startup-568h@2x.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+
+	    <link rel="apple-touch-startup-image" href="/img/startup/startup-768w1004h.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)">
+	    <link rel="apple-touch-startup-image" href="/img/startup/startup-1024w748h.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)">
+	    <link rel="apple-touch-startup-image" href="/img/startup/startup-768w1004h@2x.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)">
+	    <link rel="apple-touch-startup-image" href="/img/startup/startup-1024w748h@2x.png" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)">
+
+		<link href="/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="/css/bootstrap-glyphicons.css" rel="stylesheet" />
+
+		<script type="text/javascript" src="/js/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/js/fastclick.js"></script>
+	</head>
+<body>
+	<div class="container" style="padding: 1em">
+		<div class="row"><h4>Sound</h4></div>
+		<div class="row">
+			<button type="button" class="col-4 btn btn-default btn-lg btn-danger" data-remote-name="samsung" data-remote-key="KEY_POWER"><span class="glyphicon glyphicon-off"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="samsung" data-remote-key="KEY_VOLUMEDOWN"><span class="glyphicon glyphicon-volume-down"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="samsung" data-remote-key="KEY_VOLUMEUP"><span class="glyphicon glyphicon-volume-up"></span></button>
+			<div class="col-4"></div>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="samsung" data-remote-key="KEY_CHANNEL">source</button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="samsung" data-remote-key="KEY_MUTE"><span class="glyphicon glyphicon-volume-off"></span></button>
+		</div>
+		<div class="row"><h4>TV</h4></div>
+		<div class="row">
+			<button type="button" class="col-4 btn btn-default btn-lg btn-danger" data-remote-name="tv" data-remote-key="KEY_POWER"><span class="glyphicon glyphicon-off"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="tv" data-remote-key="KEY_CHANNELDOWN"><span class="glyphicon glyphicon-fast-backward"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="tv" data-remote-key="KEY_CHANNELUP"><span class="glyphicon glyphicon-fast-forward"></span></button>
+		</div>
+		<div class="row"><h4>Belgacom</h4></div>
+		<div class="row">
+			<button type="button" class="col-4 btn btn-default btn-lg btn-danger" data-remote-name="belgacom" data-remote-key="KEY_POWER"><span class="glyphicon glyphicon-off"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="belgacom" data-remote-key="KEY_CHANNELDOWN"><span class="glyphicon glyphicon-fast-backward"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="belgacom" data-remote-key="KEY_CHANNELUP"><span class="glyphicon glyphicon-fast-forward"></span></button>
+		</div>
+		<div class="row"><h4>Media</h4></div>
+		<div class="row">
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="back"><span class="glyphicon glyphicon-arrow-left"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="up"><span class="glyphicon glyphicon-chevron-up"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="contextmenu"><span class="glyphicon glyphicon-share"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="left"><span class="glyphicon glyphicon-chevron-left"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="select">select</button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="right"><span class="glyphicon glyphicon-chevron-right"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="playpause"><span class="glyphicon glyphicon-play"></span><span class="glyphicon glyphicon-pause"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="down"><span class="glyphicon glyphicon-chevron-down"></span></button>
+			<button type="button" class="col-4 btn btn-default btn-lg" data-remote-name="xbmc" data-remote-key="stop"><span class="glyphicon glyphicon-stop"></span></button>
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/client.js"></script>
+</body>
+</html>
