@@ -6,7 +6,6 @@
   "dependencies": {
     "express": "latest",
     "lirc_node": "latest",
-    "gpio": "latest",
-    "xbmc": "latest"
+    "gpio": "latest"
   }
 }

@@ -8,25 +8,11 @@ lirc_node.init();
 var gpio = require("gpio");
 var gpio4 = gpio.export(4, {
    direction: 'out',
-   interval: 200,
-   ready: function() {
-   }
+   interval: 200
 });
 
-var Xbmc = require('xbmc');
-
-var connection = new Xbmc.TCPConnection({
-	host: '127.0.0.1',
-	port: 9090,
-	verbose: false
-});
-var xbmcApi = new Xbmc.XbmcApi;
-
-xbmcApi.setConnection(connection);
-
-xbmcApi.on('connection:data', function()  { });
-xbmcApi.on('connection:open', function()  { console.log('onOpen');  });
-xbmcApi.on('connection:close', function() { console.log('onClose'); });
+var http = require('http');
+var activePlayers = [];
 
 app.use(express.static(__dirname + '/public'));
 
@@ -35,23 +21,77 @@ app.get('/', function(req, res){
 });
 
 app.get('/remote/:name/:key', function(req, res){
-	console.log(req.params.name);
+	res.header("Access-Control-Allow-Origin", "*");
+  	res.header("Access-Control-Allow-Headers", "X-Requested-With");
 	if(req.params.name == 'xbmc') {
-		xbmcApi.input.ExecuteAction(req.params.key);
-	} else if(req.params.name == "belgacom" && req.params.key == "KEY_POWER") {
-		gpio4.set(function(){
-			setTimeout(function(){
-				gpio4.set(0, function(){
-				});
-			}, 200);
-		});
+		if(req.params.key == 'Player.Stop' || req.params.key == 'Player.PlayPause') {
+			xmbcSendToActivePlayer(req.params.key, {}, function(xmbcResult){
+			});
+		} else if(req.params.key == 'Player.IncreaseSpeed' || req.params.key == 'Player.DecreaseSpeed') {
+			var speed = (req.params.key == 'Player.IncreaseSpeed') ? 'increment' : 'decrement';
+			xmbcSendToActivePlayer('Player.SetSpeed', {speed: speed}, function(xmbcResult){
+				console.log(xmbcResult);
+			});
+		} else {
+			xmbcSend(req.params.key, {}, function(xmbcResult){
+			});
+		}
 	} else {
-		lirc_node.irsend.send_once(req.params.name, req.params.key, function() {
-		  console.log("Sent Command", req.params.name, req.params.key);
-		});
+		lirc_node.irsend.send_once(req.params.name, req.params.key);
 	}
 	res.json({result: 'ok'});
 });
+
+var getActivePlayerInterval = setInterval(function(){
+	xmbcSend('Player.GetActivePlayers', {}, function(xmbcResult){
+		if(xmbcResult.result) {
+			activePlayers = xmbcResult.result;
+		}
+	});
+}, 1000);
+
+function xmbcSendToActivePlayer(method, params, callback) {
+	if(activePlayers.length) {
+		params.playerid = activePlayers[0].playerid;
+		xmbcSend(method, params, callback);
+	}
+}
+
+function xmbcSend(method, params, callback) {
+	var dataString = JSON.stringify({
+		id: 1,
+		jsonrpc: "2.0",
+		method: method,
+		params: params
+	});
+	var options = {
+	  host: '192.168.1.70',
+	  port: 80,
+	  path: '/jsonrpc?' + method,
+	  method: 'POST',
+	  headers: {
+		  'Content-Type': 'application/json',
+		  'Content-Length': dataString.length
+		}
+	};
+	var xbmcReq = http.request(options, function(xbmcRes) {
+		xbmcRes.setEncoding('utf-8');
+		var responseString = '';
+		xbmcRes.on('data', function(data) {
+			responseString += data;
+		});
+		xbmcRes.on('end', function() {
+			var resultObject = JSON.parse(responseString);
+			if(callback) {
+				callback(resultObject);
+			}
+		});
+	});
+	xbmcReq.on('error', function(e) {
+	});
+	xbmcReq.write(dataString);
+	xbmcReq.end();
+}
 
 app.listen(port);
 console.log("Listening on port", port);
