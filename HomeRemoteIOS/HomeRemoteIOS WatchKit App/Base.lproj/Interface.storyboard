@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HomeRemoteIOS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" id="I45-qT-ghB">
+                            <items>
+                                <button width="44" height="44" alignment="center" backgroundImage="back" id="Ke9-Yb-KJb">
+                                    <connections>
+                                        <action selector="mediaBackPressed" destination="AgC-eL-Hgc" id="EvH-iE-f4J"/>
+                                    </connections>
+                                </button>
+                                <button width="44" height="44" alignment="center" backgroundImage="up" id="iR1-JV-BiI">
+                                    <connections>
+                                        <action selector="mediaUpPressed" destination="AgC-eL-Hgc" id="bQT-oz-7Ob"/>
+                                    </connections>
+                                </button>
+                                <button width="44" height="44" alignment="center" backgroundImage="contextmenu" id="bD8-Bw-v6y">
+                                    <connections>
+                                        <action selector="mediaContextPressed" destination="AgC-eL-Hgc" id="NTE-cW-4UX"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" id="zwq-xU-cqq">
+                            <items>
+                                <button width="44" height="44" alignment="center" backgroundImage="left" id="xyf-n0-cFv">
+                                    <connections>
+                                        <action selector="mediaLeftPressed" destination="AgC-eL-Hgc" id="7xh-gd-ieY"/>
+                                    </connections>
+                                </button>
+                                <button width="44" height="44" alignment="center" backgroundImage="check" id="Xna-dd-b9a">
+                                    <connections>
+                                        <action selector="mediaOkPressed" destination="AgC-eL-Hgc" id="gvN-gx-RWA"/>
+                                    </connections>
+                                </button>
+                                <button width="44" height="44" alignment="center" backgroundImage="right" id="lH5-vD-Gzh">
+                                    <connections>
+                                        <action selector="mediaRightPressed" destination="AgC-eL-Hgc" id="t4p-J9-vlr"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" id="cSS-xf-9sf">
+                            <items>
+                                <button width="44" height="44" alignment="center" backgroundImage="playpause" id="Q1l-p6-0Nr">
+                                    <connections>
+                                        <action selector="mediaPlayPausePressed" destination="AgC-eL-Hgc" id="tvx-jI-4oH"/>
+                                    </connections>
+                                </button>
+                                <button width="44" height="44" alignment="center" backgroundImage="down" id="Ion-LB-TdA">
+                                    <connections>
+                                        <action selector="mediaDownPressed" destination="AgC-eL-Hgc" id="sSb-Ht-v4P"/>
+                                    </connections>
+                                </button>
+                                <button width="44" height="44" alignment="center" backgroundImage="stop" id="mqR-JJ-l3I">
+                                    <connections>
+                                        <action selector="mediaStopPressed" destination="AgC-eL-Hgc" id="W3b-x0-nYT"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="OsS-ea-BWg" kind="relationship" relationship="nextPage" id="nfz-qW-Ncl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="127" y="217"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="4yS-ni-RMS">
+            <objects>
+                <controller id="eYy-6c-eJf" customClass="InterfaceController" customModule="HomeRemoteIOS_WatchKit_Extension">
+                    <items>
+                        <button width="84" height="84" alignment="center" verticalAlignment="center" backgroundImage="power" id="t7n-Vp-SBK">
+                            <connections>
+                                <action selector="ampPowerPressed" destination="eYy-6c-eJf" id="QGa-aH-Ey8"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="Amplifier" id="xyC-Rk-UXl"/>
+                    </items>
+                    <connections>
+                        <segue destination="o2x-le-SQD" kind="relationship" relationship="nextPage" id="VtK-UR-hnX"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="127" y="547"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="PMe-o3-EiS">
+            <objects>
+                <controller id="o2x-le-SQD" customClass="InterfaceController" customModule="HomeRemoteIOS_WatchKit_Extension">
+                    <items>
+                        <button width="84" height="84" alignment="center" verticalAlignment="center" backgroundImage="power" id="qw0-U7-PMl">
+                            <connections>
+                                <action selector="tvPowerPressed" destination="o2x-le-SQD" id="Zhw-hk-MZk"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="TV" id="BiF-i1-fVR"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="328" y="547"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="f6p-80-3mx">
+            <objects>
+                <controller id="OsS-ea-BWg" customClass="InterfaceController" customModule="HomeRemoteIOS_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" id="VgU-g5-WJP">
+                            <items>
+                                <button width="66" height="66" alignment="center" backgroundImage="volumedown" id="oH0-Ij-AtN">
+                                    <connections>
+                                        <action selector="ampVolumeDownPressed" destination="OsS-ea-BWg" id="msn-Sg-ydk"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="66" alignment="center" backgroundImage="volumeup" id="cib-yR-B4k">
+                                    <connections>
+                                        <action selector="ampVolumeUpPressed" destination="OsS-ea-BWg" id="kc6-8z-oVh"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="center" id="x25-JC-f9p">
+                            <items>
+                                <button width="66" height="66" alignment="center" backgroundImage="src" id="qW8-OP-cnz">
+                                    <connections>
+                                        <action selector="ampSrcPressed" destination="OsS-ea-BWg" id="E4E-CX-UUN"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="66" alignment="center" backgroundImage="mute" id="LNy-R9-Db8">
+                                    <connections>
+                                        <action selector="ampVolumeMutePressed" destination="OsS-ea-BWg" id="oBL-FI-SVs"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="kwQ-6Q-NG8" kind="relationship" relationship="nextPage" id="VfM-sS-VTI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="333" y="217"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="UvY-76-6gA">
+            <objects>
+                <controller id="kwQ-6Q-NG8" customClass="InterfaceController" customModule="HomeRemoteIOS_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" verticalAlignment="center" id="7kp-CK-sPx">
+                            <items>
+                                <button width="66" height="66" alignment="center" backgroundImage="previous" id="SYl-6Q-9do">
+                                    <connections>
+                                        <action selector="tvPreviousPressed" destination="kwQ-6Q-NG8" id="6U4-Uj-cQq"/>
+                                    </connections>
+                                </button>
+                                <button width="66" height="66" alignment="center" backgroundImage="next" id="koS-ID-QTo">
+                                    <connections>
+                                        <action selector="tvNextPressed" destination="kwQ-6Q-NG8" id="lD7-eo-cHf"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="eYy-6c-eJf" kind="relationship" relationship="nextPage" id="hyc-k6-KFi"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="544" y="217"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="HomeRemoteIOS_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="gv7-I2-MZq"/>
+                        <group alignment="left" id="eew-Gs-W6Y"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="121" y="831"/>
+        </scene>
+    </scenes>
+</document>

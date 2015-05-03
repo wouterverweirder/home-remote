@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C30B9C81AF61BAE002C1B7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B9C71AF61BAE002C1B7E /* AppDelegate.swift */; };
+		6C30B9CA1AF61BAE002C1B7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B9C91AF61BAE002C1B7E /* ViewController.swift */; };
+		6C30B9CD1AF61BAE002C1B7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B9CB1AF61BAE002C1B7E /* Main.storyboard */; };
+		6C30B9CF1AF61BAE002C1B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B9CE1AF61BAE002C1B7E /* Images.xcassets */; };
+		6C30B9D21AF61BAE002C1B7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B9D01AF61BAE002C1B7E /* LaunchScreen.xib */; };
+		6C30B9DE1AF61BAE002C1B7E /* HomeRemoteIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B9DD1AF61BAE002C1B7E /* HomeRemoteIOSTests.swift */; };
+		6C30B9F01AF61BD1002C1B7E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B9EF1AF61BD1002C1B7E /* InterfaceController.swift */; };
+		6C30B9F21AF61BD1002C1B7E /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30B9F11AF61BD1002C1B7E /* GlanceController.swift */; };
+		6C30B9F41AF61BD1002C1B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B9F31AF61BD1002C1B7E /* Images.xcassets */; };
+		6C30B9F81AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B9F71AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App.app */; };
+		6C30BA001AF61BD1002C1B7E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C30B9FE1AF61BD1002C1B7E /* Interface.storyboard */; };
+		6C30BA021AF61BD1002C1B7E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C30BA011AF61BD1002C1B7E /* Images.xcassets */; };
+		6C30BA051AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6C30B9EB1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C30B9D81AF61BAE002C1B7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C30B9BA1AF61BAE002C1B7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C30B9C11AF61BAE002C1B7E;
+			remoteInfo = HomeRemoteIOS;
+		};
+		6C30B9F91AF61BD1002C1B7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C30B9BA1AF61BAE002C1B7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C30B9F61AF61BD1002C1B7E;
+			remoteInfo = "HomeRemoteIOS WatchKit App";
+		};
+		6C30BA031AF61BD1002C1B7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C30B9BA1AF61BAE002C1B7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C30B9EA1AF61BD1002C1B7E;
+			remoteInfo = "HomeRemoteIOS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6C30BA0C1AF61BD1002C1B7E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6C30BA051AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6C30B9C21AF61BAE002C1B7E /* HomeRemoteIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeRemoteIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C30B9C61AF61BAE002C1B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C30B9C71AF61BAE002C1B7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6C30B9C91AF61BAE002C1B7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C30B9CC1AF61BAE002C1B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6C30B9CE1AF61BAE002C1B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6C30B9D11AF61BAE002C1B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6C30B9D71AF61BAE002C1B7E /* HomeRemoteIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeRemoteIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C30B9DC1AF61BAE002C1B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C30B9DD1AF61BAE002C1B7E /* HomeRemoteIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteIOSTests.swift; sourceTree = "<group>"; };
+		6C30B9EB1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HomeRemoteIOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C30B9EE1AF61BD1002C1B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C30B9EF1AF61BD1002C1B7E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6C30B9F11AF61BD1002C1B7E /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		6C30B9F31AF61BD1002C1B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6C30B9F71AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HomeRemoteIOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C30B9FD1AF61BD1002C1B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C30B9FF1AF61BD1002C1B7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6C30BA011AF61BD1002C1B7E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C30B9BF1AF61BAE002C1B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C30B9D41AF61BAE002C1B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C30B9E81AF61BD1002C1B7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6C30B9B91AF61BAE002C1B7E = {
+			isa = PBXGroup;
+			children = (
+				6C30B9C41AF61BAE002C1B7E /* HomeRemoteIOS */,
+				6C30B9DA1AF61BAE002C1B7E /* HomeRemoteIOSTests */,
+				6C30B9EC1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension */,
+				6C30B9FB1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App */,
+				6C30B9C31AF61BAE002C1B7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6C30B9C31AF61BAE002C1B7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9C21AF61BAE002C1B7E /* HomeRemoteIOS.app */,
+				6C30B9D71AF61BAE002C1B7E /* HomeRemoteIOSTests.xctest */,
+				6C30B9EB1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension.appex */,
+				6C30B9F71AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6C30B9C41AF61BAE002C1B7E /* HomeRemoteIOS */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9C71AF61BAE002C1B7E /* AppDelegate.swift */,
+				6C30B9C91AF61BAE002C1B7E /* ViewController.swift */,
+				6C30B9CB1AF61BAE002C1B7E /* Main.storyboard */,
+				6C30B9CE1AF61BAE002C1B7E /* Images.xcassets */,
+				6C30B9D01AF61BAE002C1B7E /* LaunchScreen.xib */,
+				6C30B9C51AF61BAE002C1B7E /* Supporting Files */,
+			);
+			path = HomeRemoteIOS;
+			sourceTree = "<group>";
+		};
+		6C30B9C51AF61BAE002C1B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9C61AF61BAE002C1B7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C30B9DA1AF61BAE002C1B7E /* HomeRemoteIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9DD1AF61BAE002C1B7E /* HomeRemoteIOSTests.swift */,
+				6C30B9DB1AF61BAE002C1B7E /* Supporting Files */,
+			);
+			path = HomeRemoteIOSTests;
+			sourceTree = "<group>";
+		};
+		6C30B9DB1AF61BAE002C1B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9DC1AF61BAE002C1B7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C30B9EC1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9EF1AF61BD1002C1B7E /* InterfaceController.swift */,
+				6C30B9F11AF61BD1002C1B7E /* GlanceController.swift */,
+				6C30B9F31AF61BD1002C1B7E /* Images.xcassets */,
+				6C30B9ED1AF61BD1002C1B7E /* Supporting Files */,
+			);
+			path = "HomeRemoteIOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6C30B9ED1AF61BD1002C1B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9EE1AF61BD1002C1B7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6C30B9FB1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9FE1AF61BD1002C1B7E /* Interface.storyboard */,
+				6C30BA011AF61BD1002C1B7E /* Images.xcassets */,
+				6C30B9FC1AF61BD1002C1B7E /* Supporting Files */,
+			);
+			path = "HomeRemoteIOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		6C30B9FC1AF61BD1002C1B7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C30B9FD1AF61BD1002C1B7E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C30B9C11AF61BAE002C1B7E /* HomeRemoteIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C30B9E11AF61BAE002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOS" */;
+			buildPhases = (
+				6C30B9BE1AF61BAE002C1B7E /* Sources */,
+				6C30B9BF1AF61BAE002C1B7E /* Frameworks */,
+				6C30B9C01AF61BAE002C1B7E /* Resources */,
+				6C30BA0C1AF61BD1002C1B7E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C30BA041AF61BD1002C1B7E /* PBXTargetDependency */,
+			);
+			name = HomeRemoteIOS;
+			productName = HomeRemoteIOS;
+			productReference = 6C30B9C21AF61BAE002C1B7E /* HomeRemoteIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6C30B9D61AF61BAE002C1B7E /* HomeRemoteIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C30B9E41AF61BAE002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOSTests" */;
+			buildPhases = (
+				6C30B9D31AF61BAE002C1B7E /* Sources */,
+				6C30B9D41AF61BAE002C1B7E /* Frameworks */,
+				6C30B9D51AF61BAE002C1B7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C30B9D91AF61BAE002C1B7E /* PBXTargetDependency */,
+			);
+			name = HomeRemoteIOSTests;
+			productName = HomeRemoteIOSTests;
+			productReference = 6C30B9D71AF61BAE002C1B7E /* HomeRemoteIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6C30B9EA1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C30BA091AF61BD1002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOS WatchKit Extension" */;
+			buildPhases = (
+				6C30B9E71AF61BD1002C1B7E /* Sources */,
+				6C30B9E81AF61BD1002C1B7E /* Frameworks */,
+				6C30B9E91AF61BD1002C1B7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C30B9FA1AF61BD1002C1B7E /* PBXTargetDependency */,
+			);
+			name = "HomeRemoteIOS WatchKit Extension";
+			productName = "HomeRemoteIOS WatchKit Extension";
+			productReference = 6C30B9EB1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		6C30B9F61AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C30BA061AF61BD1002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOS WatchKit App" */;
+			buildPhases = (
+				6C30B9F51AF61BD1002C1B7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HomeRemoteIOS WatchKit App";
+			productName = "HomeRemoteIOS WatchKit App";
+			productReference = 6C30B9F71AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6C30B9BA1AF61BAE002C1B7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Wouter Verweirder";
+				TargetAttributes = {
+					6C30B9C11AF61BAE002C1B7E = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					6C30B9D61AF61BAE002C1B7E = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 6C30B9C11AF61BAE002C1B7E;
+					};
+					6C30B9EA1AF61BD1002C1B7E = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					6C30B9F61AF61BD1002C1B7E = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6C30B9BD1AF61BAE002C1B7E /* Build configuration list for PBXProject "HomeRemoteIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6C30B9B91AF61BAE002C1B7E;
+			productRefGroup = 6C30B9C31AF61BAE002C1B7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6C30B9C11AF61BAE002C1B7E /* HomeRemoteIOS */,
+				6C30B9D61AF61BAE002C1B7E /* HomeRemoteIOSTests */,
+				6C30B9EA1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension */,
+				6C30B9F61AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C30B9C01AF61BAE002C1B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C30B9CD1AF61BAE002C1B7E /* Main.storyboard in Resources */,
+				6C30B9D21AF61BAE002C1B7E /* LaunchScreen.xib in Resources */,
+				6C30B9CF1AF61BAE002C1B7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C30B9D51AF61BAE002C1B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C30B9E91AF61BD1002C1B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C30B9F41AF61BD1002C1B7E /* Images.xcassets in Resources */,
+				6C30B9F81AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C30B9F51AF61BD1002C1B7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C30BA001AF61BD1002C1B7E /* Interface.storyboard in Resources */,
+				6C30BA021AF61BD1002C1B7E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C30B9BE1AF61BAE002C1B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C30B9CA1AF61BAE002C1B7E /* ViewController.swift in Sources */,
+				6C30B9C81AF61BAE002C1B7E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C30B9D31AF61BAE002C1B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C30B9DE1AF61BAE002C1B7E /* HomeRemoteIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C30B9E71AF61BD1002C1B7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C30B9F01AF61BD1002C1B7E /* InterfaceController.swift in Sources */,
+				6C30B9F21AF61BD1002C1B7E /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C30B9D91AF61BAE002C1B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C30B9C11AF61BAE002C1B7E /* HomeRemoteIOS */;
+			targetProxy = 6C30B9D81AF61BAE002C1B7E /* PBXContainerItemProxy */;
+		};
+		6C30B9FA1AF61BD1002C1B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C30B9F61AF61BD1002C1B7E /* HomeRemoteIOS WatchKit App */;
+			targetProxy = 6C30B9F91AF61BD1002C1B7E /* PBXContainerItemProxy */;
+		};
+		6C30BA041AF61BD1002C1B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C30B9EA1AF61BD1002C1B7E /* HomeRemoteIOS WatchKit Extension */;
+			targetProxy = 6C30BA031AF61BD1002C1B7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6C30B9CB1AF61BAE002C1B7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C30B9CC1AF61BAE002C1B7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6C30B9D01AF61BAE002C1B7E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C30B9D11AF61BAE002C1B7E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		6C30B9FE1AF61BD1002C1B7E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6C30B9FF1AF61BD1002C1B7E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C30B9DF1AF61BAE002C1B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6C30B9E01AF61BAE002C1B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C30B9E21AF61BAE002C1B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HomeRemoteIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6C30B9E31AF61BAE002C1B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HomeRemoteIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6C30B9E51AF61BAE002C1B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HomeRemoteIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeRemoteIOS.app/HomeRemoteIOS";
+			};
+			name = Debug;
+		};
+		6C30B9E61AF61BAE002C1B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HomeRemoteIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HomeRemoteIOS.app/HomeRemoteIOS";
+			};
+			name = Release;
+		};
+		6C30BA071AF61BD1002C1B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = HomeRemoteIOS_WatchKit_Extension;
+				INFOPLIST_FILE = "HomeRemoteIOS WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		6C30BA081AF61BD1002C1B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = HomeRemoteIOS_WatchKit_Extension;
+				INFOPLIST_FILE = "HomeRemoteIOS WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		6C30BA0A1AF61BD1002C1B7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HomeRemoteIOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6C30BA0B1AF61BD1002C1B7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HomeRemoteIOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C30B9BD1AF61BAE002C1B7E /* Build configuration list for PBXProject "HomeRemoteIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C30B9DF1AF61BAE002C1B7E /* Debug */,
+				6C30B9E01AF61BAE002C1B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C30B9E11AF61BAE002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C30B9E21AF61BAE002C1B7E /* Debug */,
+				6C30B9E31AF61BAE002C1B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C30B9E41AF61BAE002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C30B9E51AF61BAE002C1B7E /* Debug */,
+				6C30B9E61AF61BAE002C1B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C30BA061AF61BD1002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C30BA071AF61BD1002C1B7E /* Debug */,
+				6C30BA081AF61BD1002C1B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C30BA091AF61BD1002C1B7E /* Build configuration list for PBXNativeTarget "HomeRemoteIOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C30BA0A1AF61BD1002C1B7E /* Debug */,
+				6C30BA0B1AF61BD1002C1B7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6C30B9BA1AF61BAE002C1B7E /* Project object */;
+}
