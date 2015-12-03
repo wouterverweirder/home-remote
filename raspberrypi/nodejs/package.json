@@ -1,11 +1,10 @@
 {
   "name": "home-remote",
   "description": "home remote app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "dependencies": {
-    "express": "latest",
-    "lirc_node": "latest",
-    "gpio": "latest"
+    "express": "^4.13.3",
+    "lirc_node": "git://github.com/wouterverweirder/lirc_node.git"
   }
 }

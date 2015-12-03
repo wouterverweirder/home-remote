@@ -3,13 +3,11 @@ var app = express();
 var port = 8888;
 
 var lirc_node = require('lirc_node');
-lirc_node.init();
 
-var gpio = require("gpio");
-var gpio4 = gpio.export(4, {
-   direction: 'out',
-   interval: 200
-});
+//comment the line below if your irsend command works without specifying a socket
+lirc_node.setSocket('/run/lirc/lircd-lirc0');
+
+lirc_node.init();
 
 var http = require('http');
 var activePlayers = [];
